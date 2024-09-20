@@ -1,8 +1,9 @@
 
-dif del (a,b):
+def div(a,b):
+    #Деление
     return a / b
 
-def sum(a,b):
+def plus(a,b):
     #Сложение
     return a + b
 
