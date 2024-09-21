@@ -1,38 +1,39 @@
-def subst(a,b):
+def subst(num1, num2):
     #Вычитание
-    return a - b 
+    return num1 - num2 
 
-def mult(a,b):
+
+def mult(num1, num2):
     #Умножение
-    return a * b
-def div(a,b):
-    #Деление
-    return a / b
+    return num1 * num2
 
-def plus(a,b):
+
+def div(num1, num2):
+    #Деление
+    return num1 / num2
+
+
+def plus(num1, num2):
     #Сложение
-    return a + b
+    return num1 + num2
 
 
 def main():
-    expression = input('Введите математическое выражение, используя 2 переменные и символы "+", "-", "*", "/"')
+    expression = input('Введите математическое выражение, используя 2 переменные и символы "+", "-", "*", "/": ')
     some_parts = expression.split()
-    a, operator, b = some_parts
-    a = float(a)
-    b = float(b)
+    num1, operator, b = some_parts
+    num1 = float(num1)
+    num2 = float(num2)
     if (operator == '*'):
-        result = mult(a, b)
+        result = mult(num1, num2)
     elif (operator == '/'):
-        result = div(a, b)
+        result = div(num1, num2)
     elif (operator == '-'):
-        result = subst(a, b)
+        result = subst(num1, num2)
     elif (operator == '+'):
-        result = plus(a, b)
-
-    
-
-
+        result = plus(num1, num2)
     print(result)
+
 
 if __name__ == "__main__":
     main()
