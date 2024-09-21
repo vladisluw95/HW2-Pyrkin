@@ -21,7 +21,7 @@ def plus(num1, num2):
 def main():
     expression = input('Введите математическое выражение, используя 2 переменные и символы "+", "-", "*", "/": ')
     some_parts = expression.split()
-    num1, operator, b = some_parts
+    num1, operator, num2 = some_parts
     num1 = float(num1)
     num2 = float(num2)
     if (operator == '*'):
